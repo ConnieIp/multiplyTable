@@ -19,3 +19,7 @@ it("should output null if start number larger than 1000", () => {
 it("should output null if end number larger than 1000", () => {
     expect(createMultiplicationTable(5, 1001)).toBe(null);
 });
+
+it("should output multiply table", () => {
+    expect(createMultiplicationTable(2, 4)).toBe("2*2=4\n2*3=6  3*3=9\n2*4=8  3*4=12  4*4=16");
+});
