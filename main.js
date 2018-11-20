@@ -9,7 +9,7 @@ function checkInputValid(start, end) {
     if (end < start) {
         return false;
     }
-    if (end < 1) {
+    if (start < 1 || end < 1) {
         return false;
     }
     return true;
