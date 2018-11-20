@@ -9,6 +9,9 @@ function checkInputValid(start, end) {
     if (end < start) {
         return false;
     }
+    if (end < 1) {
+        return false;
+    }
     return true;
 }
 
